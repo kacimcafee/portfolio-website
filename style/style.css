@@ -38,17 +38,38 @@ body {
   font-family: sans-serif;
   background-color: #E2E1C9;
   color: #154CA4;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+/*
+body.about-page {
+  background-color: #02513D;
+}
 
+/*
+.case-studies-page {
+  
+}
 
+.community-page {
+  
+}
 
+.contact-page {
+  
+}
 
+.landing-page {
+  
+}
 
+.work-page {
+  
+}
 
-
-
-
+*/
 
 
 
