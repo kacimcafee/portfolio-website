@@ -32,34 +32,6 @@ body {
   padding: 0;
 }
 
-/*
-body.about-page {
-  background-color: #02513D;
-}
-
-/*
-.case-studies-page {
-  
-}
-
-.community-page {
-  
-}
-
-.contact-page {
-  
-}
-
-.landing-page {
-  
-}
-
-.work-page {
-  
-}
-
-*/
-
 
 
 /* ======== Header Navigation Bar ======== */
@@ -70,7 +42,6 @@ header {
   z-index: 1000;
 }
 
-/* Flexbox layout for nav bar */
 .header-nav-bar {
   max-width: 1200px;
   margin: 0 auto;
@@ -88,7 +59,6 @@ header {
   padding: 0;
 }
 
-/* Link styling */
 .header-nav-bar a {
   text-decoration: none;
   color: #faf3e1;
@@ -114,7 +84,7 @@ header {
 }
 
 
-/* ======== Responsiveness ======== */
+/* Responsiveness */
 @media (max-width: 700px) {
   .header-nav-bar ul {
     flex-direction: column;
@@ -145,7 +115,6 @@ footer {
   text-align: center;
 }
 
-/* Centered nav inside footer */
 .footer-nav-bar {
   max-width: 1200px;
   margin: 0 auto;
@@ -161,7 +130,6 @@ footer {
   padding: 0;
 }
 
-
 .footer-nav-bar a {
   text-decoration: none;
   color: #E2E1C9;
@@ -170,17 +138,190 @@ footer {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effects */
 .footer-nav-bar a:hover,
 .footer-nav-bar a:focus {
   color: #ff5500; 
   transform: translateY(-2px);
 }
 
-/* ======== Responsiveness ======== */
+/* Responsiveness */
 @media (max-width: 700px) {
   .footer-nav-bar ul {
     flex-direction: column;
     gap: 1rem;
+  }
+}
+
+
+
+/* ================== About Page ====================== */
+.about-image {
+  display: flex;
+  justify-content: flex-end;   
+  align-items: center;         
+  padding: 1rem;               
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.about-image img {
+  max-width: 60%;              
+  height: auto;                
+  object-fit: cover;           
+  border-radius: 8px;          
+}
+
+.about-title {
+  display:flex;
+  justify-content: flex-start;
+  padding-left: 3rem; 
+}
+
+
+
+
+
+
+/* ================== Community Page ====================== */
+.community-title {
+  display:flex;
+  justify-content: flex-start;
+  font-size: .8rem; 
+}
+
+.community-image {
+  display: flex;
+  justify-content: flex-end;   
+  align-items: center;         
+  padding: 1rem;               
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.community-image img {
+  max-width: 60%;              
+  height: auto;                
+  object-fit: cover;           
+  border-radius: 8px;          
+}
+
+
+
+
+
+
+/* ================== Contact Page ====================== */
+.contact-image {
+  width: 100%;            
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-image img {
+  display: block;         
+  max-width: 60%;        
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0;              
+}
+
+.contact-title {
+  display:flex;
+  justify-content: flex-end;
+  padding-right: 3rem; 
+}
+
+
+
+
+
+/*============== Hero Section ==================*/
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;               /* full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;           
+}
+
+/* Hero Image */
+.hero-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           
+  z-index: 0;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 1;                 
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* overlay */
+  z-index: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content h3 {
+    font-size: 1rem;
+  }
+}
+ 
+/* Hero Button */
+.hero-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #33332d;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #ff5500;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .hero-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
   }
 }
