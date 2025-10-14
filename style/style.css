@@ -1,24 +1,13 @@
 /*
 Colors:
-    Pastels:
-        White: #EEEAE7
-        Plum: #D4B8DE
-        Lime: #DEDF55
-        Yellow: #FDB52A
-        Pink: #FEBAED
-        Clementine: #FF6C1F
-        Leaf Green: #B89825 
+  orange: #ff5500
+  Dark grey: #33332D
+  medium grey: #727265
+  light grey: #dadad0
+  off white: #faf3e1
+  cream:F5e7c6
+  black: #222222
 
-
-    Green/Blue/Orange
-        Yellow: #FDB52A
-        Orange: #F5490D
-        Stone: #E2E1C9
-        Light Purple: #ED9BF4
-        Light Blue: #457CD2
-        Dark Blue: #154CA4
-        Dark Green: #02513D
-        Light Green: #329F84
 
 */
 
@@ -36,8 +25,8 @@ Colors:
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #E2E1C9;
-  color: #154CA4;
+  background-color: #222222;
+  color: #faf3e1;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -75,7 +64,7 @@ body.about-page {
 
 /* ======== Header Navigation Bar ======== */
 header {
-  background-color: #E2E1C9; 
+  background-color: #222222; 
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -102,7 +91,7 @@ header {
 /* Link styling */
 .header-nav-bar a {
   text-decoration: none;
-  color: #154CA4;
+  color: #faf3e1;
   font-weight: 600;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
@@ -111,7 +100,7 @@ header {
 
 /* Hover Animation */
 .header-nav-bar a {
-  color: #154CA4;
+  color: #faf3e1;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-decoration: none;
@@ -120,7 +109,7 @@ header {
 
 .header-nav-bar a:hover,
 .header-nav-bar a:focus {
-  color: #F5490D;
+  color: #ff5500;
   opacity: 0.85;
 }
 
@@ -150,8 +139,8 @@ header {
 
 /* ========  Footer Navigation Bar  ======== */
 footer {
-  background-color: #457CD2; 
-  color: #ffffff;
+  background-color: #222222; 
+  color: #dadad0;
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -184,7 +173,7 @@ footer {
 /* Hover effects */
 .footer-nav-bar a:hover,
 .footer-nav-bar a:focus {
-  color: #FDB52A; 
+  color: #ff5500; 
   transform: translateY(-2px);
 }
 
