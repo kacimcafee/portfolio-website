@@ -24,7 +24,7 @@ Colors:
 /* ======== Base Styles ======== */
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #222222;
   color: #faf3e1;
   height: 100%;
@@ -32,7 +32,13 @@ body {
   padding: 0;
 }
 
-
+h1,
+h2,
+h3,
+h4 {
+  font-family: Verdana, Geneva, sans-serif; 
+  color:#faf3e1;
+}
 
 /* ======== Header Navigation Bar ======== */
 header {
@@ -61,7 +67,7 @@ header {
 
 .header-nav-bar a {
   text-decoration: none;
-  color: #faf3e1;
+  color: #dadad0;
   font-weight: 600;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
@@ -110,7 +116,7 @@ header {
 /* ========  Footer Navigation Bar  ======== */
 footer {
   background-color: #222222; 
-  color: #dadad0;
+  color: #33332D;
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -161,6 +167,7 @@ footer {
   align-items: center;         
   padding: 1rem;               
   box-sizing: border-box;
+  transform: translateY(-100px);
   width: 100%;
 }
 
@@ -171,12 +178,33 @@ footer {
   border-radius: 8px;          
 }
 
-.about-title {
-  display:flex;
-  justify-content: flex-start;
-  padding-left: 3rem; 
+.about {
+  display: flex;
+  align-items: center; /* aligns text and image vertically */
+  justify-content: space-between; /* space between left and right sides */
+  flex-wrap: wrap; /* makes it responsive */
 }
 
+.about-header {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: flex-start; /* keep left-aligned */
+  padding-left: 3rem;
+}
+
+.about-title {
+  margin: 0; 
+  transform: translateY(80px);
+  padding: 0.25rem 0 0.25rem 1rem
+
+}
+
+.about-subtitle {
+  margin-top: 0.5rem; 
+  font-weight: normal; 
+  padding-left: 1rem; 
+  transform: translateY(50px);
+}
 
 
 
@@ -186,7 +214,9 @@ footer {
 .community-title {
   display:flex;
   justify-content: flex-start;
-  font-size: .8rem; 
+  font-size: .75rem; 
+  transform: translateY(60px);
+  padding: 0rem 0rem 0rem .8rem;
 }
 
 .community-image {
@@ -196,6 +226,7 @@ footer {
   padding: 1rem;               
   box-sizing: border-box;
   width: 100%;
+  transform: translateY(-55px);
 }
 
 .community-image img {
@@ -205,6 +236,23 @@ footer {
   border-radius: 8px;          
 }
 
+.community-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* left-align horizontally */
+  padding-left: 0.8rem;        /* consistent left spacing */
+  gap: 2rem;                   /* optional: space between the three sections */
+  transform: translateY(60px);  /* move the whole row down together */
+}
+
+/* Remove individual transforms */
+.started,
+.going,
+.support {
+  display: flex;
+  flex-direction: column; 
+  padding: 0;
+}
 
 
 
@@ -212,7 +260,7 @@ footer {
 
 /* ================== Contact Page ====================== */
 .contact-image {
-  width: 100%;            
+  width: 90%;            
   padding: 1rem;
   box-sizing: border-box;
 }
@@ -229,7 +277,9 @@ footer {
 .contact-title {
   display:flex;
   justify-content: flex-end;
-  padding-right: 3rem; 
+  
+  transform: translateY(80px);
+  padding: 0.25rem 1rem 0.25rem 0rem
 }
 
 
@@ -324,4 +374,29 @@ footer {
     padding: 0.8rem 1.5rem;
     font-size: 0.9rem;
   }
+}
+
+
+
+
+
+
+
+/* =========== social media buttons =========== */
+.social-links {
+  display: flex;
+  justify-content: flex-end;    /* align links to the right */
+  gap: 1rem;                    /* space between links */
+  padding: 1rem;                /* optional padding from edges */
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #faf3e1;               /* text color */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff5500;               /* hover color */
 }
