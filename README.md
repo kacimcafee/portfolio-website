@@ -1,35 +1,27 @@
 # TO DO:
 
     [ ] content blurb
-        [ ] about
+        [X] about
         [ ] case studies
-        [ ] community
-        [ ] contact
-        [ ] home
+        [X] community
+        [X] contact
+        [X] home
         [ ] work
 
-    [ ] Add Photos
+    [X] Add Photos
 
     [ ] a11y audit of portfolio site
     [ ] other a11y audits (for case studies)
 
-    [ ] social media linkage (in footer)
-        [ ] github
-        [ ] linkedin
-        [ ] Heylo
-
-    [ ] change colors for each page 
+    [X] social media linkage (in footer)
+        [X] github
+        [X] linkedin
+ 
 
 
 
 
 ## Citations:
-
-# Creator: Edward Jenner
-  Name: "abstract.jpg"
-  Description: "abstract black and white image"
-  URL: [https://www.pexels.com/photo/multiple-overlay-patterns-of-monochrome-design-4252890/]
-  Date Accessed: 10/14/25
 
 # Creator: Niklas Jeromin
 Name: "mountains.jpg"
