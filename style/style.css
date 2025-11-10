@@ -430,34 +430,60 @@ footer {
 
 /* =========== social media buttons =========== */
 
-.social-links {
-  display: flex;
-  flex-direction: column;  
-  align-items: flex-end;   
-  gap: 0.75rem;            
-  padding: 1rem;
-}
-
-
 .social-links a {
   text-decoration: none;
-  color: #faf3e1;
+  color: #ff5500;             /* orange by default */
   font-weight: bold;
-  transition: color 0.3s ease;
+  font-size: 1.2rem;          /* slightly larger */
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-links a:hover {
-  color: #ff5500;
+.social-links a:hover,
+.social-links a:focus {
+  color: #FFB700;             /* saffron yellow on hover */
+  transform: translateY(-2px); /* subtle lift effect */
+}
+   
+
+
+
+
+/* =========== WORK social  =========== */
+.work-social {
+  display: flex;
+  justify-content: center;     
+  align-items: center;         
+  gap: 3rem;                  
+  margin-top: 3rem;
+  flex-wrap: wrap;            
 }
 
+.work-social a {
+  text-decoration: none;
+  color: #ff5500;              
+  font-weight: 700;
+  font-size: 1.2rem; 
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
 
+.work-social a:hover,
+.work-social a:focus {
+  color: #FFB700;             
+  transform: translateY(-2px);
+}
 
-
+/* Responsiveness */
+@media (max-width: 700px) {
+  .work-social {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 
 
 /* ================== Work Page ====================== */
 
-/* Section centered on page */
 .skills-section {
   display: flex;
   justify-content: center;
@@ -466,14 +492,14 @@ footer {
   padding: 2rem;
 }
 
-/* Grid container: 3 columns × 2 rows */
+
 .skills-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   grid-template-rows: repeat(2, 1fr);    /* 2 rows */
   gap: 1rem;
   width: 60%;       /* middle portion of screen */
-  max-width: 700px; /* optional max width */
+  max-width: 700px;
 }
 
 /* Cards: square */
@@ -518,11 +544,78 @@ footer {
 
 .skills-section {
   display: flex;
-  flex-direction: column; /* stack title above grid */
+  flex-direction: column; 
   justify-content: center;
-  align-items: center;    /* center horizontally */
+  align-items: center;    
   min-height: 80vh;
   padding: 2rem;
 }
 
 
+/* ======== Work Section SUMMARY ======== */
+.summary {
+  max-width: 800px;              
+  margin: 2rem auto;             
+  text-align: center;            
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #faf3e1;                
+  padding: 0 1rem;
+}
+
+.summary p {
+  margin-bottom: 1.5rem;
+}
+
+/* Link styling */
+.summary a {
+  color: #ff5500;               
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.summary a:hover,
+.summary a:focus {
+  color: #FFB700;               
+  border-color: #FFB700;
+}
+
+
+/* ======== Community Support LINKS ======== */
+.support-links {
+  display: flex;
+  justify-content:left;        
+  gap: 3rem;                     
+  margin-top: 1rem;
+  flex-wrap: wrap;               
+  text-align: center;
+}
+
+.support-links a {
+  text-decoration: none;
+  color: #ff5500;                
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.support-links a:hover,
+.support-links a:focus {
+  color: #FFB700;                 
+  transform: translateY(-2px);
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 700px) {
+  .support-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .support-links a {
+    font-size: 1rem;
+  }
+}
