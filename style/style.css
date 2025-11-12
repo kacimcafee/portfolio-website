@@ -33,9 +33,8 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4 {
+h2
+{
   font-family: Verdana, Geneva, sans-serif; 
   color:#faf3e1;
 }
@@ -214,7 +213,7 @@ footer {
   padding-left: 1rem;
   max-width: 30%;
   transform: translateY(60px);
-}
+} 
 
 
 
@@ -246,7 +245,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-.community-content h3 {
+.community-content h2 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
@@ -337,7 +336,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-.hero-content h3 {
+.hero-content h2 {
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -359,7 +358,7 @@ footer {
     font-size: 2.5rem;
   }
 
-  .hero-content h3 {
+  .hero-content h2 {
     font-size: 1rem;
   }
 }

@@ -2,26 +2,10 @@
 https://kacimcafee.github.io/portfolio-website/
 
 
+# Accessibility-First Portfolio
 
-# TO DO:
+Built with accessibility in mind, this portfolio emphasizes semantic HTML, ARIA landmarks, keyboard navigation, high contrast, responsive design, and descriptive alt text. Every element is crafted to be inclusive, reflecting my work as an Accessibility Specialist and Front-End Developer.
 
-    [ ] content blurb
-        [X] about
-        [ ] case studies
-        [X] community
-        [X] contact
-        [X] home
-        [ ] work
-
-    [X] Add Photos
-
-    [ ] a11y audit of portfolio site
-    [ ] other a11y audits (for case studies)
-
-    [X] social media linkage (in footer)
-        [X] github
-        [X] linkedin
- 
 
 
 
@@ -51,3 +35,8 @@ Name: "branches.jpg"
 Description: "black and white image of branched"
 URL: [https://www.pexels.com/photo/dry-tree-twigs-under-light-sky-in-park-5906656/]
 Date Accessed: 10/14/25
+
+
+
+# TO DO:
+    [ ] Correct layout on "about" page
