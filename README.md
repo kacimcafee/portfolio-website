@@ -40,3 +40,4 @@ Date Accessed: 10/14/25
 
 # TO DO:
     [ ] Correct layout on "about" page
+    [ ] Add "main" sections and correct CSS
