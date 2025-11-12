@@ -36,8 +36,3 @@ Description: "black and white image of branched"
 URL: [https://www.pexels.com/photo/dry-tree-twigs-under-light-sky-in-park-5906656/]
 Date Accessed: 10/14/25
 
-
-
-# TO DO:
-    [ ] Correct layout on "about" page
-    [ ] Add "main" sections and correct CSS
