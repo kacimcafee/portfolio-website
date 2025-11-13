@@ -39,6 +39,16 @@ h2
   color:#faf3e1;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* ======== Header Navigation Bar ======== */
 header {
   background-color: #222222; 
@@ -159,6 +169,14 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
 /* ================== About Page ====================== */
 .about {
   display: flex;
@@ -171,9 +189,8 @@ footer {
   flex-wrap: wrap; 
 }
 
-/* Text section */
 .about-text {
-  flex: 1 1 500px; /* grows, shrinks, min width 500px */
+  flex: 1 1 500px; 
   min-width: 300px;
   overflow: visible; 
   text-overflow: unset;
@@ -181,13 +198,13 @@ footer {
 }
 
 .about-title h1 {
-  margin: 0;
+  margin: 0 0 1.5rem 0;
   font-size: 2.5rem;
   color: #faf3e1;
 }
 
 .about-subtitle h2 {
-  margin-top: 0.5rem;
+  margin: .75rem 0 2rem 0;
   font-weight: normal;
   font-size: 1.25rem;
   color: #dadad0;
@@ -239,6 +256,10 @@ footer {
 
 
 
+
+
+
+
 /* ================== Community Page ====================== */
 .community {
   display: flex;
@@ -250,7 +271,7 @@ footer {
   margin: 0 auto;
 }
 
-/* Left column */
+
 .community-text {
   flex: 1;
   display: flex;
@@ -259,7 +280,6 @@ footer {
   text-align: left;
 }
 
-/* Title and text */
 .community-title h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -276,7 +296,6 @@ footer {
   line-height: 1.6;
 }
 
-/* Right column (image) */
 .community-image {
   flex: 1;
   display: flex;
@@ -292,7 +311,7 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive layout */
+/* Responsiveness */
 @media (max-width: 768px) {
   .community {
     flex-direction: column;
@@ -319,6 +338,11 @@ footer {
 
 
 
+
+
+
+
+
 /*============== Hero Section ==================*/
 .hero {
   position: relative;
@@ -330,7 +354,6 @@ footer {
   overflow: hidden;           
 }
 
-/* Hero Image */
 .hero-image img {
   position: absolute;
   top: 0;
@@ -341,7 +364,6 @@ footer {
   z-index: 0;
 }
 
-/* Hero Content */
 .hero-content {
   position: relative;
   z-index: 1;                 
@@ -372,7 +394,7 @@ footer {
   z-index: 0;
 }
 
-/* Responsive adjustments */
+/* Responsiveness */
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.5rem;
@@ -383,6 +405,16 @@ footer {
   }
 }
  
+
+
+
+
+
+
+
+
+
+
 /* Hero Button */
 .hero-btn {
   display: inline-block;
@@ -401,7 +433,7 @@ footer {
   transform: scale(1.05);
 }
 
-/* Responsive adjustment */
+/* Responsiveness */
 @media (max-width: 768px) {
   .hero-btn {
     padding: 0.8rem 1.5rem;
@@ -412,29 +444,38 @@ footer {
 
 
 
+
+
+
+
+
+
+
 /* ================== Contact Page ======================*/
 .contact-image {
-  width: 90%;            
-  padding: 1rem;
+  display: flex;              
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  margin: -7.5rem 0 0 1rem; 
+  width: 40%;                  
+  padding-left: 3rem;         
   box-sizing: border-box;
-  transform: translateY(-120px);
+  translate: y(120px);
 }
 
 .contact-image img {
-  display: block;         
-  max-width: 60%;        
+  max-width: 100%;             
   height: auto;
   object-fit: cover;
   border-radius: 8px;
-  margin: 0;              
 }
 
 .contact-header {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* keeps everything on the right */
+  align-items: flex-end; 
+  margin-right: 1.5rem; 
   padding: 2rem;
-  transform: translateY(60px);
 }
 
 .contact-header h1 {
@@ -447,8 +488,12 @@ footer {
 
 
 
-/* =========== social media buttons =========== */
 
+
+
+
+
+/* =========== social media buttons =========== */
 .social-links a {
   text-decoration: none;
   color: #ff5500;             /* orange by default */
@@ -459,10 +504,16 @@ footer {
 
 .social-links a:hover,
 .social-links a:focus {
-  color: #FFB700;             /* saffron yellow on hover */
-  transform: translateY(-2px); /* subtle lift effect */
+  color: #FFB700;             
+  transform: translateY(-2px); 
 }
-   
+ 
+
+
+
+
+
+
 
 
 
@@ -473,7 +524,7 @@ footer {
   justify-content: center;     
   align-items: center;         
   gap: 3rem;                  
-  margin-top: 3rem;
+  margin: 4rem 0 0 0;
   flex-wrap: wrap;            
 }
 
@@ -501,7 +552,16 @@ footer {
 }
 
 
-/* ================== Work Page ====================== */
+
+
+
+
+
+
+
+
+
+/* ================== Work Page CARDS ====================== */
 
 .skills-section {
   display: flex;
@@ -514,14 +574,13 @@ footer {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);   
   gap: 1rem;
-  width: 60%;       /* middle portion of screen */
+  width: 60%;       
   max-width: 700px;
 }
 
-/* Cards: square */
 .skill-card {
   background-color: #33332D;
   color: #faf3e1;
@@ -544,7 +603,7 @@ footer {
   color: #222222;
 }
 
-/* Responsive */
+/* Responsiveness */
 @media (max-width: 768px) {
   .skills-container {
     grid-template-columns: repeat(2, 1fr);
@@ -559,16 +618,23 @@ footer {
   }
 }
 
-
-
 .skills-section {
   display: flex;
   flex-direction: column; 
   justify-content: center;
   align-items: center;    
   min-height: 80vh;
-  padding: 2rem;
+  padding: .5rem;
 }
+
+
+
+
+
+
+
+
+
 
 
 /* ======== Work Section SUMMARY ======== */
@@ -586,7 +652,6 @@ footer {
   margin-bottom: 1.5rem;
 }
 
-/* Link styling */
 .summary a {
   color: #ff5500;               
   font-weight: 700;
@@ -600,6 +665,15 @@ footer {
   color: #FFB700;               
   border-color: #FFB700;
 }
+
+
+
+
+
+
+
+
+
 
 
 /* ======== Community Support LINKS ======== */
@@ -627,7 +701,7 @@ footer {
   transform: translateY(-2px);
 }
 
-/* Responsive layout for small screens */
+/* Responsiveness */
 @media (max-width: 700px) {
   .support-links {
     flex-direction: column;
