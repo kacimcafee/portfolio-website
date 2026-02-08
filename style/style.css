@@ -6,7 +6,7 @@ Colors:
   light grey: #dadad0
   off white: #faf3e1
   cream:F5e7c6
-  black: #222222`
+  black: #222222
 */
 
 
@@ -564,12 +564,13 @@ footer {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);   
   gap: 1rem;
-  width: 60%;       
-  max-width: 700px;
+  width: 90%;       
+  max-width: 1200px;
 }
+
 
 .skill-card {
   background-color: #33332D;
@@ -592,6 +593,7 @@ footer {
   background-color: #ff5500;
   color: #222222;
 }
+
 
 /* Responsiveness */
 @media (max-width: 768px) {
