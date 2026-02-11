@@ -4,7 +4,7 @@
 
 # Accessibility-First Portfolio
 
-Built with accessibility in mind, this portfolio emphasizes semantic HTML, ARIA landmarks, keyboard navigation, high contrast, responsive design, and descriptive alt text. Every element is crafted to be inclusive, reflecting my work as an Accessibility Specialist and Front-End Developer.
+Built with accessibility and user experience at the forefront, this portfolio showcases inclusive, human-centered digital design. I focus on semantic HTML, ARIA landmarks, keyboard navigation, high contrast, responsive design, and descriptive alt text, ensuring every element supports diverse user needs. Through UX research, accessibility audits, and usability studies, I translate user insights into actionable design solutions that enhance adoption, engagement, and overall user confidence. This work reflects my experience as an Accessibility Specialist and UX-focused Front-End Developer, bridging technical implementation with real user impact.
 
 
 
