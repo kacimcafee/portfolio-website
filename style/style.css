@@ -862,3 +862,45 @@ footer {
   color: #faf3e1;
   margin: 0;              
 }
+
+
+
+
+/* ============= WORK Apple Glass (thumbnail/blurb) ============== */
+.apple-glass {
+  display: flex;
+  align-items: flex-start;
+  gap: 150px;
+  margin-bottom: 50px;
+}
+
+.apple-glass img {
+  width: 600px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+
+.apple-glass-text {
+  max-width: 600px;
+}
+
+.apple-glass-text h3 {
+  margin: 0;
+}
+
+.apple-glass-text p {
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.apple-glass-text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.apple-glass-text a:hover {
+  text-decoration: underline;
+}
