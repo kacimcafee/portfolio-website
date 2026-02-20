@@ -930,10 +930,11 @@ footer {
   transform: translateY(-2px);
 }
 
-/* =========== Portfolio Work Layout =============== */
+
+/* ============= Portfolio Work Layout =============== */
 .portfolio-work-section {
   display: flex;
-  gap: 50px;
+  gap: 70px;
   margin-bottom: 80px; 
   align-items: flex-start;
   flex-wrap: wrap;
@@ -952,33 +953,34 @@ footer {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 18px 40px rgba(0,0,0,0.85); 
-  transition: transform 0.5s ease, margin-top 0.5s ease;
+  transition: transform 0.5s ease, margin-top 0.5s ease, margin-left 0.5s ease;
   cursor: default;
   position: relative;
   margin-top: -140px;
-  padding-left: 20px; 
+  margin-left: 50px; 
 }
 
 .portfolio-work-left img:first-child {
   margin-top: 0;
+  margin-left: 50px; 
   z-index: 5;
 }
-
 
 .portfolio-work-left img:nth-child(2) { z-index: 4; }
 .portfolio-work-left img:nth-child(3) { z-index: 3; }
 .portfolio-work-left img:nth-child(4) { z-index: 2; }
 .portfolio-work-left img:nth-child(5) { z-index: 1; }
 
-
 .portfolio-work-left:hover img {
   margin-top: 0; 
+  margin-left: 50px; 
   transform: scale(1.05);
   z-index: 10;
 }
 
 .portfolio-work-left:hover img:nth-child(n+2) {
   margin-top: 40px; 
+  margin-left: 50px; 
 }
 
 .portfolio-work-left img:only-child:hover {
@@ -988,10 +990,12 @@ footer {
 }
 
 .portfolio-work-right {
-  flex: 0 0 50%;
+  flex: 0 0 45%; 
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding-right: 50px; 
+  margin-left: 10px;
 }
 
 .portfolio-work-right h2 {
@@ -1008,6 +1012,25 @@ footer {
   line-height: 1.5;
 }
 
+/* Progress bullets */
+.progress-bullets {
+  margin: 0;
+  padding-left: 1.5rem; 
+  list-style-type: disc; 
+}
+
+.progress-bullets li {
+  margin-bottom: 0.5rem; 
+  line-height: 1.5;
+  color: #ffffff; 
+  font-family: 'IBM Plex Sans', 'Source Sans 3', sans-serif;
+}
+
+.progress-bullets li::marker {
+  color: #FFB700;
+}
+
+
 @media (max-width: 900px) {
   .portfolio-work-section {
     flex-direction: column;
@@ -1020,12 +1043,16 @@ footer {
 
   .portfolio-work-left img {
     margin-top: -50px;
+    margin-left: 20px; 
   }
+
   .portfolio-work-left img:first-child {
     margin-top: 0;
+    margin-left: 20px;
   }
 
   .portfolio-work-left:hover img:nth-child(n+2) {
     margin-top: 15px;
+    margin-left: 20px;
   }
 }
