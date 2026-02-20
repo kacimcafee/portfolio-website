@@ -182,9 +182,13 @@ header {
 /* ========  Footer Navigation Bar  ======== */
 footer {
   background-color: #222222; 
-  color: #33332D;
+  color: #727265;           
   padding: 2rem 1rem;
   text-align: center;
+}
+
+.footer-nav-bar a {
+  color: #E2E1C9;           /* keep links as-is */
 }
 
 .footer-nav-bar {
