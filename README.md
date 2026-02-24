@@ -36,3 +36,8 @@ Description: "black and white image of branched"
 URL: [https://www.pexels.com/photo/dry-tree-twigs-under-light-sky-in-park-5906656/]
 Date Accessed: 10/14/25
 
+
+
+
+# Figma References
+Photo (2/24/26): Architectural photography of metropolis under stratus clouds by Abhishek Verma via Pexels (https://www.pexels.com/photo/architectural-photography-of-metropolis-under-stratus-clouds-670261/). Used under Pexels license with design modifications and overlays applied for portfolio concept purposes.
