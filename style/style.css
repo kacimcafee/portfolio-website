@@ -188,7 +188,7 @@ footer {
 }
 
 .footer-nav-bar a {
-  color: #E2E1C9;           /* keep links as-is */
+  color: #E2E1C9;           
 }
 
 .footer-nav-bar {
@@ -220,7 +220,6 @@ footer {
   transform: translateY(-2px);
 }
 
-/* Responsiveness */
 @media (max-width: 700px) {
   .footer-nav-bar ul {
     flex-direction: column;
@@ -279,11 +278,11 @@ footer {
 
 .about-image img {
   width: 100%;
-  height: 450px;
+  height: 550px;
   max-width: 450px; 
   border-radius: 8px;
   object-fit: cover;
-  margin-top: 60px;
+  margin-top: 25px;
 }
 
 @media (max-width: 768px) {
@@ -471,53 +470,51 @@ footer {
 
 
 /* ================== Contact Page ======================*/
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .contact-image {
-  display: flex;              
-  justify-content: flex-start; 
-  align-items: flex-start; 
-  margin: -7.5rem 0 0 1rem; 
-  width: 40%;                  
-  padding-left: 3rem;         
-  box-sizing: border-box;
-  translate: y(120px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .contact-image img {
-  max-width: 100%;             
+  width: 100%;
+  max-width: 900px; 
   height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
 
-.contact-header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; 
-  margin-right: 1.5rem; 
-  padding: 2rem;
-}
-
-.contact-header h1 {
-  margin-bottom: 1rem;
-}
-
-
-
 
 
 /* =========== social media buttons =========== */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; 
+  width: 100%;
+  margin-top: 1rem;
+}
+
 .social-links a {
   text-decoration: none;
-  color: #ff5500;             
+  color: #ff5500;
   font-weight: bold;
-  font-size: 1.6rem;          
+  font-size: 1.6rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-links a:hover,
 .social-links a:focus {
-  color: #FFB700;             
-  transform: translateY(-2px); 
+  color: #FFB700;
+  transform: translateY(-2px);
 }
  
 
@@ -696,31 +693,27 @@ footer {
   max-width: 600px;
 }
 
-/* H3 styling */
 .work-a11y-text h3 {
   margin: 0;
 }
 
-/* H3 links: yellow by default, orange on hover */
 .work-a11y-text h3 a {
-  color: #FFB700;   /* yellow */
+  color: #FFB700;   
   font-weight: bold; 
   transition: color 0.3s ease;
   text-decoration: none;
 }
 
 .work-a11y-text h3 a:hover {
-  color: #ff5500;   /* orange on hover */
+  color: #ff5500;   
   text-decoration: underline;
 }
 
-/* Paragraph styling */
 .work-a11y-text p {
   margin-top: 8px;
   line-height: 1.5;
 }
 
-/* Paragraph links remain separate */
 .work-a11y-text p a {
   color: inherit;
   text-decoration: none;
@@ -911,17 +904,14 @@ footer {
   transform: scale(1.03);
 }
 
-/* TEXT container (matches work-a11y-text pattern) */
 .FOSDEM-text {
   max-width: 600px;
 }
 
-/* H3 styling */
 .FOSDEM-text h3 {
   margin: 0;
 }
 
-/* Link styling (yellow default, orange hover) */
 .FOSDEM-text h3 a {
   color: #FFB700;
   font-weight: bold;
@@ -934,19 +924,16 @@ footer {
   text-decoration: underline;
 }
 
-/* Optional subtitle (h4) */
 .FOSDEM-text h4 {
   margin: 6px 0 0 0;
   font-style: italic;
 }
 
-/* Paragraph styling */
 .FOSDEM-text p {
   margin-top: 8px;
   line-height: 1.5;
 }
 
-/* Links inside paragraphs */
 .FOSDEM-text p a {
   color: inherit;
   text-decoration: none;
@@ -956,7 +943,6 @@ footer {
   text-decoration: underline;
 }
 
-/* Optional footnote */
 .FOSDEM-text i {
   display: block;
   margin-top: 10px;

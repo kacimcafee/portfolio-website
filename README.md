@@ -37,6 +37,11 @@ URL: [https://www.pexels.com/photo/dry-tree-twigs-under-light-sky-in-park-590665
 Date Accessed: 10/14/25
 
 
+# Creator: Alan Cabello
+Name: "leaf.jpg"
+Description: "black and white image of a leaf"
+Date Accessed: 2/25/26
+URL: [https://www.pexels.com/photo/gray-leaf-on-black-background-1291515/] 
 
 
 # Figma References
