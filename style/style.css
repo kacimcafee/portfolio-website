@@ -799,8 +799,8 @@ footer {
 }
 
 .work-settings-audit img {
-  width: 600px;
-  height: auto;
+  width: 605px;
+  height: 100;
   border-radius: 8px;
   flex-shrink: 0;
   margin-left: 20px;
@@ -996,6 +996,12 @@ footer {
 .project-summary a:hover b {
   color: #FFB700;
   transform: translateY(-2px);
+  
+}
+
+.project-summary p a,
+.project-summary p a:visited {
+  color: #ff5500;
 }
 
 
