@@ -734,8 +734,6 @@ footer {
 
 
 
-
-
 /* ============= WORK Thunderbird Settings Audit (thumbnail/blurb) ============== */
 .work-settings-audit {
   display: flex;
@@ -777,6 +775,15 @@ footer {
   line-height: 1.3;
   letter-spacing: 0.8px;
   color: #faf3e1;
+  margin: 0;              
+}
+
+.projects-title h3 {
+  font-family: 'IBM Plex Sans', 'Source Sans 3', sans-serif;
+  font-weight: 500;        
+  line-height: 2;
+  letter-spacing: 0.8px;
+  color: #a8a89a;
   margin: 0;              
 }
 
