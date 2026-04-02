@@ -912,10 +912,35 @@ footer {
   color: #faf3e1;
 }
 
+ /* =========== portfolio work Link =========== */
+.portfolio-work-right a,
+.portfolio-work-right a:visited {
+  text-decoration: none;
+  color: #ff5500;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.portfolio-work-right a:hover,
+.portfolio-work-right a:focus,
+.portfolio-work-right a:hover b {
+  color: #FFB700;
+  transform: translateY(-2px);
+  
+}
+
+.portfolio-work-right p a,
+.portfolio-work-right p a:visited {
+  color: #ff5500;
+}
+
 .portfolio-work-right p {
   margin: 0;
   line-height: 1.5;
 }
+
 
 /* Progress bullets */
 .progress-bullets {
@@ -960,4 +985,5 @@ footer {
     margin-top: 15px;
     margin-left: 20px;
   }
+  
 }
