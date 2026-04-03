@@ -54,8 +54,11 @@
 				<em>*Screen reader compatability testing in progress — findings to be added in a future 
 				iteration of this audit.</em>
 
-				<p><a href="https://docs.google.com/spreadsheets/d/1uFLbqk7_-dMo5c1feX6Sr6FhmjjP6jiEtVtD3SBBQys/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><b>Full Audit Findings <i>(Google Sheets)</i></b></a></p>
-			
+				<div class="audit-links">
+					<p><a href="https://docs.google.com/spreadsheets/d/1uFLbqk7_-dMo5c1feX6Sr6FhmjjP6jiEtVtD3SBBQys/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><b>Full Audit Findings <i>(Google Sheets)</i></b></a></p>
+					<p><a href="assets/settings-audit/comprehensive/Comprehensive-TB-Settings-Audit-UI.pdf" target="_blank" rel="noopener noreferrer"><b>Full Audit Findings: Structure & User Interface Findings <i>(PDF)</i></b></a></p>
+					<p><a href="assets/settings-audit/comprehensive/Comprehensive-TB-Settings-Audit-Keyboard-Navigation.pdf" target="_blank" rel="noopener noreferrer"><b>Full Audit Findings: Keyboard Navigation Compatability <i>(PDF)</i></b></a></p>
+				</div>
 			</div>
 			
 
@@ -65,18 +68,28 @@
 					<a href="https://docs.google.com/spreadsheets/d/1OdC0Xa54ahl_lL8owqivpP4jH7soh0P4lDx2EAPAb5M/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
 						<img src="assets/settings-audit/tb-audit-2.png" alt="Thunderbird Settings General Image Thumbnail">
 					</a>
+					<div class="audit-links">
+						<h3><a href="https://docs.google.com/spreadsheets/d/1OdC0Xa54ahl_lL8owqivpP4jH7soh0P4lDx2EAPAb5M/edit?usp=sharing" target="_blank" rel="noopener noreferrer">General Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
+						<h3><a href="assets/settings-audit/general/GENERAL-UI.pdf" target="_blank" rel="noopener noreferrer">General Settings: Structure & User Interface Findings <i>(PDF)</i></a></h3>
+						<h3><a href="assets/settings-audit/general/GENERAL-keyboard-navigation.pdf" target="_blank" rel="noopener noreferrer">General Settings: Keyboard Navigation Compatability Findings <i>(PDF)</i></a></h3>
+				
+					</div>
 				</div>
 				
 				<div class="portfolio-work-right">
 					<h2>Thunderbird Settings: General</h2>
-					<h3><a href="https://docs.google.com/spreadsheets/d/1OdC0Xa54ahl_lL8owqivpP4jH7soh0P4lDx2EAPAb5M/edit?usp=sharing" target="_blank" rel="noopener noreferrer">General Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
-					<p>The General settings pane serves as the baseline for this accessibility audit. Color contrast testing across light and dark modes found that body text, 
-                        headings, and links all meet WCAG 2.2 AA requirements — however, default tag label colors fail the 4.5:1 minimum ratio required for normal-sized text. 
-                        Interactive component contrast failures were also identified across both modes, affecting dropdown and button boundaries. 
-                        Focus visibility passed in both modes with contrast ratios well above the 3:1 minimum. 
-                        Pinch-to-zoom is unsupported even though keyboard command zoom functions correctly, which is noted as a platform interaction gap rather than a WCAG failure.
+					<p>The General pane introduced the most layered set of findings in this audit, centered on the Tags section. Body text, headings,
+						 and links passed color contrast requirements in both light and dark modes. However, default tag label colors fail the 4.5:1 
+						 minimum under WCAG 2.2 AA 1.4.3 across multiple states — including default display, hover, and unfocused window states — 
+						 in both modes. Because these tags are used to categorize and prioritize messages, the failures occur not just during passive 
+						 viewing but at the moment of active interaction, precisely when legibility matters most. Interactive component boundaries also 
+						 fail the 3:1 minimum under 1.4.11 in both modes, consistent with the systemic pattern found throughout the Settings interface.
+						  Focus visibility was strong, with indicators fully enclosing focused components and contrast ratios ranging from 4.7:1 to 8.8:1
+						 across light and dark modes. Tab order was logical, all checkboxes and links operated correctly via keyboard, and radio button 
+						 groups behaved as expected. Several dropdown controls activated only via arrow keys rather than Enter or Space — a non-standard 
+						 interaction pattern flagged as a mid-severity keyboard failure. A unique finding specific to this pane: deleting a tag via keyboard 
+						 triggers immediate, permanent deletion with no confirmation dialog or undo mechanism, filed as a mid-severity failure under WCAG 2.2 AA 3.3.4 Error Prevention.
                     </p>
-                    <em>*Screen reader compatability testing in progress — findings to be added in a future iteration of this audit.</em>
 				</div>
 			</div>
 
@@ -86,18 +99,24 @@
 					<a href="https://docs.google.com/spreadsheets/d/1J9g7xkKZpQlRQfl1XUWNI2AeyAVVBwqYCOEqQ77qKZE/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
 						<img src="assets/settings-audit/tb-audit-3.png" alt="Thunderbird Settings Appearance Image Thumbnail">
 					</a>
+					<div class="audit-links">
+						<h3><a href="https://docs.google.com/spreadsheets/d/1J9g7xkKZpQlRQfl1XUWNI2AeyAVVBwqYCOEqQ77qKZE/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Appearance Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
+						<h3><a href="assets/settings-audit/appearance/APPEARANCE-UI.pdf" target="_blank" rel="noopener noreferrer">Appearance Settings: Structure & User Interface Findings <i>(PDF)</i></a></h3>
+						<h3><a href="assets/settings-audit/appearance/APPEARANCE-Keyboard-Navigation.pdf" target="_blank" rel="noopener noreferrer">Appearance Settings: Keyboard Navigation Compatability Findings <i>(PDF)</i></a></h3>
+					</div>
 				</div>
 				
 				<div class="portfolio-work-right">
 					<h2>Thunderbird Settings: Appearance</h2>
-					<h3><a href="https://docs.google.com/spreadsheets/d/1J9g7xkKZpQlRQfl1XUWNI2AeyAVVBwqYCOEqQ77qKZE/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Appearance Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
-					<p>The Appearance pane presents the same interactive component contrast failures found throughout the 
-						Settings interface — dropdown and button boundaries fall below the 3:1 minimum under WCAG 2.2 AA 
-						1.4.11 in both light and dark modes. Body text, headings, and links passed in both modes, focus 
-						visibility was strong, and headings were clear and descriptive. Pinch-to-zoom remains unsupported, 
-						consistent with the platform interaction gap noted throughout this audit.
+					<p>The Appearance pane reflects the systemic interactive component contrast failures found throughout the Settings interface — 
+						dropdown and button boundaries fall below the 3:1 minimum under WCAG 2.2 AA 1.4.11 in both light and dark modes, affecting 
+						activated and inactive states alike. Body text, headings, and links passed contrast requirements in both modes. Focus visibility 
+						was strong, with indicators fully enclosing focused components and contrast ratios ranging from 4.7:1 to 8.8:1 across light and 
+						dark modes — well above the 3:1 minimum. Tab order was logical and consistent with visual layout, all checkboxes toggled 
+						correctly with Space, and radio button groups navigated as expected with arrow keys. One dropdown control did not respond to Enter or Space,
+						 activating only via arrow keys — a non-standard interaction pattern that may create unpredictable keyboard experiences for users with motor 
+						 disabilities. Headings were clear and descriptive, and pinch-to-zoom remains unsupported, consistent with the platform interaction gap noted throughout this audit.
 					</p>
-                    <em>*Screen reader compatability testing in progress — findings to be added in a future iteration of this audit.</em>
 				</div>
 			</div>
 
@@ -107,18 +126,26 @@
 					<a href="https://docs.google.com/spreadsheets/d/1IV7ONUlNEp9oJVS51AsFL0JG2r_Dq12965CqwP9atzE/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
 						<img src="assets/settings-audit/tb-audit-4.png" alt="Thunderbird Settings Composition Image Thumbnail">
 					</a>
+					<div class="audit-links">
+						<h3><a href="https://docs.google.com/spreadsheets/d/1IV7ONUlNEp9oJVS51AsFL0JG2r_Dq12965CqwP9atzE/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Composition Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
+						<h3><a href="assets/settings-audit/composition/COMP-UI.pdf" target="_blank" rel="noopener noreferrer">Composition Settings: Structure & User Interface Findings <i>(PDF)</i></a></h3>
+						<h3><a href="assets/settings-audit/composition/COMP-Keyboard-Navigation.pdf" target="_blank" rel="noopener noreferrer">Composition Settings: Keyboard Navigation Compatability Findings <i>(PDF)</i></a></h3>
+				
+					</div>
 				</div>
 				
 				<div class="portfolio-work-right">
 					<h2>Thunderbird Settings: Composition</h2>
-					<h3><a href="https://docs.google.com/spreadsheets/d/1IV7ONUlNEp9oJVS51AsFL0JG2r_Dq12965CqwP9atzE/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Composition Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
-					<p>The Composition pane reflects the systemic interactive component contrast failures found across Settings, 
-						with dropdown and button boundaries falling below the 3:1 minimum under 1.4.11 in both modes. 
-						Body text, headings, and links passed contrast requirements, and focus visibility was strong in both modes. 
-						Of note: the Composition pane contains a higher density of interactive controls than most other panes, 
-						making the component boundary failures here more likely to affect user workflows in practice.
+					<p>The Composition pane reflects the systemic interactive component contrast failures found throughout the Settings interface —
+						 dropdown and button boundaries fall below the 3:1 minimum under WCAG 2.2 AA 1.4.11 in both light and dark modes, affecting 
+						 activated and inactive states alike. Body text, headings, and links passed contrast requirements in both modes. Focus visibility
+						  was strong, with indicators fully enclosing focused components and contrast ratios ranging from 4.7:1 to 8.8:1 across light and dark modes. 
+						  Tab order was logical and consistent with visual layout, all checkboxes, links, and radio button groups operated correctly via keyboard, 
+						  and no elements required mouse interaction to reach. The dropdown keyboard failure here is notably more impactful than on other panes:
+						 all dropdown controls in Composition Settings failed to respond to Enter or Space, activating only via arrow keys. Given that Composition 
+						 contains a higher density of interactive controls than most other panes — including dropdowns governing font, encoding, and reply behavior
+						 — this non-standard interaction pattern is more likely to disrupt real user workflows than the same failure elsewhere in the interface.
 					</p>
-                    <em>*Screen reader compatability testing in progress — findings to be added in a future iteration of this audit.</em>
 				</div>
 			</div>
 
@@ -128,22 +155,26 @@
 					<a href="https://docs.google.com/spreadsheets/d/16PsZrCyLUoNAoh_obdAEeK23HhBAJTzIECxS2PI1iK4/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
 						<img src="assets/settings-audit/tb-audit-5.png" alt="Thunderbird Settings Privacy and Security Image Thumbnail">
 					</a>
+					<div class="audit-links">
+						<h3><a href="https://docs.google.com/spreadsheets/d/16PsZrCyLUoNAoh_obdAEeK23HhBAJTzIECxS2PI1iK4/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Privacy & Security Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
+						<h3><a href="assets/settings-audit/privacy/PRIVACY-UI.pdf" target="_blank" rel="noopener noreferrer">Privacy & Security Settings: Structure & User Interface Findings <i>(PDF)</i></a></h3>
+						<h3><a href="assets/settings-audit/privacy/PRIVACY-Keyboard-Navigation.pdf" target="_blank" rel="noopener noreferrer">Privacy & Security Settings: Keyboard Navigation Compatability Findings <i>(PDF)</i></a></h3>
+					</div>
 				</div>
 				
 				<div class="portfolio-work-right">
 					<h2>Thunderbird Settings: Privacy & Security</h2>
-					<h3><a href="https://docs.google.com/spreadsheets/d/16PsZrCyLUoNAoh_obdAEeK23HhBAJTzIECxS2PI1iK4/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Privacy & Security Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
-					<p>The Privacy & Security pane follows the systemic pattern found across the Settings interface, with one notable exception. 
-                        Body text, headings, and links passed color contrast requirements in both light and dark modes, while interactive component boundaries
-                        — including dropdowns and buttons — fall below the 3:1 minimum required under WCAG 2.2 AA 1.4.11 in both modes.
-                        Focus visibility passed with strong contrast ratios in both modes.
-                        A unique finding on this pane is a redundant heading label — the "DNS over HTTPS" section heading appears twice consecutively,
-                        which may reduce navigation efficiency for screen reader users relying on heading navigation.
-                        This was filed as a partial failure under 2.4.6 Headings and Labels rather than a full WCAG failure,
-                        as it does not prevent navigation or understanding.
-                        Pinch-to-zoom remains unsupported, though keyboard zoom functions correctly.
+					<p>The Privacy & Security pane follows the systemic pattern found across the Settings interface, with one structural finding unique to this pane. 
+						Body text, headings, and links passed color contrast requirements in both light and dark modes, while interactive component boundaries — 
+						including dropdowns and buttons — fall below the 3:1 minimum under WCAG 2.2 AA 1.4.11 in both modes, affecting activated and inactive states alike.
+						Focus visibility was strong, with indicators fully enclosing focused components and contrast ratios ranging from 4.7:1 to 8.8:1 across light and dark modes. 
+						Tab order was logical and consistent with visual layout, all checkboxes, links, and radio button groups operated correctly via keyboard, and no elements 
+						required mouse interaction to reach. The sole dropdown on this pane failed to respond to Enter or Space, activating only via arrow keys — consistent with
+						the keyboard operability failure found throughout the Settings interface.
+						The unique finding here is a redundant heading: the 'DNS over HTTPS' section label appears twice consecutively, 
+						which may reduce navigation efficiency for screen reader users relying on heading-based scanning. This was filed as a partial failure under 2.4.6 
+						Headings and Labels rather than a full WCAG failure, as the surrounding content provides sufficient context to distinguish the two sections on closer reading.
 					</p>
-                    <em>*Screen reader compatability testing in progress — findings to be added in a future iteration of this audit.</em>
 				</div>
 			</div>
 
@@ -153,21 +184,29 @@
 					<a href="https://docs.google.com/spreadsheets/d/1YipufWYRtBobY5hGAlsV9M51O38w_hNlM8LkQUHlW14/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
 						<img src="assets/settings-audit/tb-audit-6.png" alt="Thunderbird Settings Chat Image Thumbnail">
 					</a>
+					<div class="audit-links">
+						<h3><a href="https://docs.google.com/spreadsheets/d/1YipufWYRtBobY5hGAlsV9M51O38w_hNlM8LkQUHlW14/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Chat Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
+						<h3><a href="assets/settings-audit/chat/CHAT-UI.pdf" target="_blank" rel="noopener noreferrer">Chat Settings: Structure & User Interface Findings <i>(PDF)</i></a></h3>
+						<h3><a href="assets/settings-audit/chat/CHAT -Keyboard-Navigation.pdf" target="_blank" rel="noopener noreferrer">Chat Settings: Keyboard Navigation Compatability Findings <i>(PDF)</i></a></h3>
+					</div>
 				</div>
 				
 				<div class="portfolio-work-right">
 					<h2>Thunderbird Settings: Chat</h2>
-					<h3><a href="https://docs.google.com/spreadsheets/d/1YipufWYRtBobY5hGAlsV9M51O38w_hNlM8LkQUHlW14/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Chat Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
-					<p>The Chat pane introduced a unique finding not present in other settings panes. 
-                        While most UI elements passed color contrast testing, the default Bubbles chat 
-                        theme applies Red and Blue username display colors that fail the 4.5:1 minimum ratio required for normal-sized text under WCAG 2.2 AA 1.4.3
-                        — in both light and dark modes. Notably, the alternating red and blue message text itself passed contrast testing;
-                        the failure is isolated to the username labels specifically.
-                        Interactive component boundaries also fail the 3:1 minimum under 1.4.11 in both modes,
-                        consistent with the systemic pattern found across all panes. Focus visibility passed with strong contrast ratios,
-                        headings were clear and descriptive, and pinch-to-zoom remains unsupported though keyboard zoom functions correctly.
+					<p>The Chat pane introduced a contrast finding unique to this pane. While most UI elements passed color 
+						contrast testing in both light and dark modes, the default Bubbles chat theme applies Red and Blue username
+						display colors that fail the 4.5:1 minimum under WCAG 2.2 AA 1.4.3 in both modes — filed as a partial failure scoped to 
+						default configuration only, as user-configurable styling options were outside the assessment scope. 
+						Notably, the alternating red and blue message text itself passed contrast testing; the failure is isolated 
+						specifically to the username labels. In a multi-participant chat context, username visibility is critical for 
+						tracking conversation flow, making this a meaningful barrier despite its low severity classification. 
+						Interactive component boundaries also fail the 3:1 minimum under 1.4.11 in both modes, consistent with 
+						the systemic pattern found throughout the Settings interface. Focus visibility was strong, with indicators 
+						fully enclosing focused components and contrast ratios ranging from 4.7:1 to 8.8:1 across light and dark modes. 
+						Tab order was logical, checkboxes and radio button groups operated correctly via keyboard, and no elements 
+						required mouse interaction to reach. Dropdown controls failed to respond to Enter or Space, activating only 
+						via arrow keys — consistent with the keyboard operability failure found across the Settings interface.
 					</p>
-                    <em>*Screen reader compatability testing in progress — findings to be added in a future iteration of this audit.</em>
 				</div>
 			</div>
 
@@ -177,20 +216,26 @@
 					<a href="https://docs.google.com/spreadsheets/d/1QlEKwzBcRcPh-bCNFGiwvfLm7hzs7lf6xBlfuE2re4g/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
 						<img src="assets/settings-audit/tb-audit-7.png" alt="Thunderbird Settings Export to Mobile Image Thumbnail">
 					</a>
+					<div class="audit-links">
+						<h3><a href="https://docs.google.com/spreadsheets/d/1QlEKwzBcRcPh-bCNFGiwvfLm7hzs7lf6xBlfuE2re4g/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Export for Mobile Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
+						<h3><a href="assets/settings-audit/export/EXPORT-UI.pdf" target="_blank" rel="noopener noreferrer">Export for Mobile Settings: Structure & User Interface Findings <i>(PDF)</i></a></h3>
+						<h3><a href="assets/settings-audit/export/EXPORT-Keyboard-Navigation.pdf" target="_blank" rel="noopener noreferrer">Export for Mobile Settings: Keyboard Navigation Compatability Findings <i>(PDF)</i></a></h3>
+					</div>	
 				</div>
 				
 				<div class="portfolio-work-right">
 					<h2>Thunderbird Settings: Export for Mobile</h2>
-					<h3><a href="https://docs.google.com/spreadsheets/d/1QlEKwzBcRcPh-bCNFGiwvfLm7hzs7lf6xBlfuE2re4g/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Export for Mobile Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
 					<p>The Export for Mobile pane introduced a pane-specific finding alongside the systemic failures found throughout the Settings interface. 
-                        The primary controls for this workflow — the "Select All" and "Export" buttons —
-                        fail the 4.5:1 minimum text contrast ratio under WCAG 2.2 AA 1.4.3 in both light and dark modes,
-                        affecting both active and inactive button states. As these are the only interactive controls on this pane,
-                        the failure creates a direct barrier to completing the Export for Mobile task independently.
-                        Interactive component boundaries also fail the 3:1 minimum under 1.4.11 in both modes,
-                        consistent with the systemic pattern. Focus visibility passed with strong contrast ratios in both modes,
-                        headings were clear and descriptive, and pinch-to-zoom remains unsupported though keyboard zoom functions correctly.</p>
-                   <em>*Screen reader compatability testing in progress — findings to be added in a future iteration of this audit.</em>
+						The primary controls for this workflow — the 'Select All' and 'Export' buttons — 
+						fail the 4.5:1 minimum text contrast ratio under WCAG 2.2 AA 1.4.3 in both light and dark modes, 
+						affecting both active and inactive button states. As these are the only interactive controls on this pane, 
+						the failure creates a direct barrier to completing the Export for Mobile task independently. 
+						Interactive component boundaries also fail the 3:1 minimum under 1.4.11 in both modes, 
+						consistent with the interface-wide pattern. Focus visibility was strong across both modes,
+						tab order was logical, and all reachable elements were keyboard accessible. Several test criteria — 
+						including dropdown operability, radio button group navigation, and link activation — were not 
+						applicable to this pane, as these element types are not present in the Export for Mobile interface.
+					</p>
 				</div>
 			</div>
 

@@ -857,7 +857,7 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.85); 
+  box-shadow: 0 18px 15px rgba(0,0,0,0.85); 
   transition: transform 0.5s ease, margin-top 0.5s ease, margin-left 0.5s ease;
   cursor: pointer;
   position: relative;
@@ -913,52 +913,40 @@ footer {
   color: #faf3e1;
 }
 
- /* =========== portfolio work Link =========== */
-.portfolio-work-right a,
-.portfolio-work-right a:visited {
+ /* =========== portfolio work Links =========== */
+.audit-links a,
+.audit-links a:visited {
   text-decoration: none;
   color: #ff5500;
-  font-weight: bold;
-  font-size: 1.3rem;
+  font-weight: 550;
+  font-size: 1.2rem;
   transition: color 0.3s ease, transform 0.3s ease;
   display: inline-block;
+  padding-left: 50px; 
+  padding-top: 38px;
+  
 }
 
-.portfolio-work-right a:hover,
-.portfolio-work-right a:focus,
-.portfolio-work-right a:hover b {
+.audit-links a:hover,
+.audit-links a:focus,
+.audit-links a:hover b {
   color: #FFB700;
   transform: translateY(-2px);
   
 }
 
-.portfolio-work-right p a,
-.portfolio-work-right p a:visited {
+.audit-links p a,
+.audit-links p a:visited {
   color: #ff5500;
 }
-
-.portfolio-work-right p {
-  margin: 0;
-  line-height: 1.5;
-}
-
-
-/* Progress bullets */
-.progress-bullets {
-  margin: 0;
-  padding-left: 1.5rem; 
-  list-style-type: disc; 
-}
-
-.progress-bullets li {
-  margin-bottom: 0.5rem; 
-  line-height: 1.5;
-  color: #ffffff; 
-  font-family: 'IBM Plex Sans', 'Source Sans 3', sans-serif;
-}
-
-.progress-bullets li::marker {
+.audit-links i,
+.audit-links i a:visited {
   color: #FFB700;
+}
+
+.audit-links p {
+  margin: 0;
+  line-height: 1.5;
 }
 
 
@@ -970,7 +958,9 @@ footer {
   .portfolio-work-left,
   .portfolio-work-right {
     flex: 1 1 100%;
+    
   }
+
 
   .portfolio-work-left img {
     margin-top: -50px;
