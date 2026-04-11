@@ -103,19 +103,30 @@
 						<h3><a href="https://docs.google.com/spreadsheets/d/1J9g7xkKZpQlRQfl1XUWNI2AeyAVVBwqYCOEqQ77qKZE/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Appearance Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
 						<h3><a href="assets/settings-audit/appearance/APPEARANCE-UI.pdf" target="_blank" rel="noopener noreferrer">Appearance Settings: Structure & User Interface Findings <i>(PDF)</i></a></h3>
 						<h3><a href="assets/settings-audit/appearance/APPEARANCE-Keyboard-Navigation.pdf" target="_blank" rel="noopener noreferrer">Appearance Settings: Keyboard Navigation Compatability Findings <i>(PDF)</i></a></h3>
+						<h3><a href="assets/settings-audit/appearance/APPEARANCE-SR.pdf" target="_blank" rel="noopener noreferrer">Appearance Settings: Screen Reader Compatability Findings <i>(PDF)</i></a></h3>
 					</div>
 				</div>
 				
 				<div class="portfolio-work-right">
 					<h2>Thunderbird Settings: Appearance</h2>
-					<p>The Appearance pane reflects the systemic interactive component contrast failures found throughout the Settings interface — 
-						dropdown and button boundaries fall below the 3:1 minimum under WCAG 2.2 AA 1.4.11 in both light and dark modes, affecting 
-						activated and inactive states alike. Body text, headings, and links passed contrast requirements in both modes. Focus visibility 
-						was strong, with indicators fully enclosing focused components and contrast ratios ranging from 4.7:1 to 8.8:1 across light and 
-						dark modes — well above the 3:1 minimum. Tab order was logical and consistent with visual layout, all checkboxes toggled 
-						correctly with Space, and radio button groups navigated as expected with arrow keys. One dropdown control did not respond to Enter or Space,
-						 activating only via arrow keys — a non-standard interaction pattern that may create unpredictable keyboard experiences for users with motor 
-						 disabilities. Headings were clear and descriptive, and pinch-to-zoom remains unsupported, consistent with the platform interaction gap noted throughout this audit.
+					<p>The Appearance panel reflects the systemic interactive component contrast failures found throughout the Settings Interface 
+						— dropdown and button boundaries fall below the 3:1 minimum under WCAG 2.2 AA 1.4.11 in both light and dark modes, 
+						affecting activated and inactive states alike. Body text, headings, and links passed contrast requirements in both modes. 
+						Focus visibility was strong, with indicators fully enclosing focused components and contrast ratios ranging from 4.7:1 
+						to 8.8:1 across light and dark modes — well above the 3:1 minimum. Tab order was logical and consistent with visual layout, 
+						all checkboxes toggled correctly with Space, and radio button groups navigated as expected with arrow keys. 
+						One dropdown control did not respond to Enter or Space, activating only via arrow keys — a non-standard interaction 
+						pattern that may create unpredictable keyboard experiences for users with motor disabilities. 
+						
+						<br>
+						<br>
+						
+						Headings were clear and descriptive, and pinch-to-zoom remains unsupported, consistent with the platform interaction gap 
+						noted throughout this audit. Screen reader testing identified failures in radio group labeling and heading structure. 
+						Several radio groups announced options without their group context, leaving users uncertain what they were selecting; 
+						section headings for "Window Layout," "Message List," "Cards View Options," and "Sorting and Threading" are not programmatically 
+						defined as headings at all, meaning users navigating by heading land only on "Appearance" and must explore the entire panel 
+						linearly to reach a specific setting.
 					</p>
 				</div>
 			</div>
@@ -130,21 +141,33 @@
 						<h3><a href="https://docs.google.com/spreadsheets/d/1IV7ONUlNEp9oJVS51AsFL0JG2r_Dq12965CqwP9atzE/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Composition Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
 						<h3><a href="assets/settings-audit/composition/COMP-UI.pdf" target="_blank" rel="noopener noreferrer">Composition Settings: Structure & User Interface Findings <i>(PDF)</i></a></h3>
 						<h3><a href="assets/settings-audit/composition/COMP-Keyboard-Navigation.pdf" target="_blank" rel="noopener noreferrer">Composition Settings: Keyboard Navigation Compatability Findings <i>(PDF)</i></a></h3>
+						<h3><a href="assets/settings-audit/composition/COMP-SR.pdf" target="_blank" rel="noopener noreferrer">Composition Settings: Screen Reader Compatability Findings <i>(PDF)</i></a></h3>
 				
 					</div>
 				</div>
 				
 				<div class="portfolio-work-right">
 					<h2>Thunderbird Settings: Composition</h2>
-					<p>The Composition pane reflects the systemic interactive component contrast failures found throughout the Settings interface —
-						 dropdown and button boundaries fall below the 3:1 minimum under WCAG 2.2 AA 1.4.11 in both light and dark modes, affecting 
-						 activated and inactive states alike. Body text, headings, and links passed contrast requirements in both modes. Focus visibility
-						  was strong, with indicators fully enclosing focused components and contrast ratios ranging from 4.7:1 to 8.8:1 across light and dark modes. 
-						  Tab order was logical and consistent with visual layout, all checkboxes, links, and radio button groups operated correctly via keyboard, 
-						  and no elements required mouse interaction to reach. The dropdown keyboard failure here is notably more impactful than on other panes:
-						 all dropdown controls in Composition Settings failed to respond to Enter or Space, activating only via arrow keys. Given that Composition 
-						 contains a higher density of interactive controls than most other panes — including dropdowns governing font, encoding, and reply behavior
-						 — this non-standard interaction pattern is more likely to disrupt real user workflows than the same failure elsewhere in the interface.
+					<p>The Composition panel reflects the systemic interactive component contrast failures found throughout the Settings interface
+						— dropdown and button boundaries fall below the 3:1 minimum under WCAG 2.2 AA 1.4.11 in both light and dark modes, 
+						affecting activated and inactive states alike. Body text, headings, and links passed contrast requirements in both 
+						modes. Focus visibility was strong, with indicators fully enclosing focused components and contrast ratios ranging 
+						from 4.7:1 to 8.8:1 across light and dark modes. Tab order was logical and consistent with visual layout, all 
+						checkboxes, links, and radio button groups operated correctly via keyboard, and no elements required mouse interaction 
+						to reach. The dropdown keyboard failure here is notably more impactful than on other panels: all dropdown controls in 
+						Composition Settings failed to respond to Enter or Space, activating only via arrow keys. 
+
+						<br>
+						<br>
+
+						Given that Composition contains a higher density of interactive controls than most other panels — including dropdowns governing font, 
+						encoding, and reply behavior — this non-standard interaction pattern is more likely to disrupt real user workflows 
+						than the same failure elsewhere in the interface. Screen reader testing revealed failures across labeling, heading 
+						structure, and reading order. Several form controls had missing or malformed labels, all section headings were
+						assigned as top-level items with no nesting, and the Filelink section contained the most severe findings on the 
+						panel — a call-to-action rendered as an image was skipped entirely by VoiceOver, and an embedded frame caused 
+						the extension description, status messages, and links to be bypassed completely, leaving screen reader users 
+						without access to content fully visible to sighted users.
 					</p>
 				</div>
 			</div>
@@ -188,24 +211,30 @@
 						<h3><a href="https://docs.google.com/spreadsheets/d/1YipufWYRtBobY5hGAlsV9M51O38w_hNlM8LkQUHlW14/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Chat Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
 						<h3><a href="assets/settings-audit/chat/CHAT-UI.pdf" target="_blank" rel="noopener noreferrer">Chat Settings: Structure & User Interface Findings <i>(PDF)</i></a></h3>
 						<h3><a href="assets/settings-audit/chat/CHAT-Keyboard-Navigation.pdf" target="_blank" rel="noopener noreferrer">Chat Settings: Keyboard Navigation Compatability Findings <i>(PDF)</i></a></h3>
+						<h3><a href="assets/settings-audit/chat/CHAT-SR.pdf" target="_blank" rel="noopener noreferrer">Chat Settings: Screen Reader Compatability Findings <i>(PDF)</i></a></h3>
 					</div>
 				</div>
 				
 				<div class="portfolio-work-right">
 					<h2>Thunderbird Settings: Chat</h2>
-					<p>The Chat pane introduced a contrast finding unique to this pane. While most UI elements passed color 
-						contrast testing in both light and dark modes, the default Bubbles chat theme applies Red and Blue username
-						display colors that fail the 4.5:1 minimum under WCAG 2.2 AA 1.4.3 in both modes — filed as a partial failure scoped to 
-						default configuration only, as user-configurable styling options were outside the assessment scope. 
-						Notably, the alternating red and blue message text itself passed contrast testing; the failure is isolated 
-						specifically to the username labels. In a multi-participant chat context, username visibility is critical for 
-						tracking conversation flow, making this a meaningful barrier despite its low severity classification. 
-						Interactive component boundaries also fail the 3:1 minimum under 1.4.11 in both modes, consistent with 
-						the systemic pattern found throughout the Settings interface. Focus visibility was strong, with indicators 
-						fully enclosing focused components and contrast ratios ranging from 4.7:1 to 8.8:1 across light and dark modes. 
-						Tab order was logical, checkboxes and radio button groups operated correctly via keyboard, and no elements 
-						required mouse interaction to reach. Dropdown controls failed to respond to Enter or Space, activating only 
-						via arrow keys — consistent with the keyboard operability failure found across the Settings interface.
+					<p>The Chat Settings panel was largely strong on labels and naming — all form controls, checkboxes, and buttons correctly identified themselves
+						and their current state to screen reader users — with one partial failure: the Show a notification dropdown omits its label entirely, 
+						leaving users without context for what the control governs. Heading structure failed across the panel, with all section headings treated 
+						as equal top-level items and no nesting, forcing screen reader users to explore the panel linearly rather than jumping to the section they 
+						need; a decorative chat preview region also surfaced to screen readers with no meaningful description, creating an unexpected interruption 
+						in the navigation flow. 
+						
+						<br>
+						<br>
+
+						The Chat panel introduced a color contrast finding unique to this panel: the default Bubbles theme displays username 
+						labels in red and blue that don't meet minimum contrast requirements in either light or dark mode — the message text itself passed, making 
+						this a failure isolated specifically to usernames, which are critical for following who said what in a group conversation. Interactive 
+						component borders also failed to meet contrast minimums, consistent with a pattern found throughout the broader Settings interface. 
+						Focus indicators were strong, fully enclosing each component with contrast ratios well above the minimum threshold across both modes; 
+						tab order was logical, and checkboxes and radio buttons operated correctly via keyboard. Dropdown controls, however, failed to
+						respond to standard keyboard inputs and could only be activated via arrow keys — consistent with a keyboard operability issue 
+						found across the Settings interface.
 					</p>
 				</div>
 			</div>
@@ -220,21 +249,26 @@
 						<h3><a href="https://docs.google.com/spreadsheets/d/1QlEKwzBcRcPh-bCNFGiwvfLm7hzs7lf6xBlfuE2re4g/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Export for Mobile Settings: Audit Findings <i>(Google Sheets)</i></a></h3>
 						<h3><a href="assets/settings-audit/export/EXPORT-UI.pdf" target="_blank" rel="noopener noreferrer">Export for Mobile Settings: Structure & User Interface Findings <i>(PDF)</i></a></h3>
 						<h3><a href="assets/settings-audit/export/EXPORT-Keyboard-Navigation.pdf" target="_blank" rel="noopener noreferrer">Export for Mobile Settings: Keyboard Navigation Compatability Findings <i>(PDF)</i></a></h3>
+						<h3><a href="assets/settings-audit/export/EXPORT-SR.pdf" target="_blank" rel="noopener noreferrer">Export for Mobile Settings: Screen Reader Compatability Findings <i>(PDF)</i></a></h3>
 					</div>	
 				</div>
 				
 				<div class="portfolio-work-right">
 					<h2>Thunderbird Settings: Export for Mobile</h2>
-					<p>The Export for Mobile pane introduced a pane-specific finding alongside the systemic failures found throughout the Settings interface. 
-						The primary controls for this workflow — the 'Select All' and 'Export' buttons — 
-						fail the 4.5:1 minimum text contrast ratio under WCAG 2.2 AA 1.4.3 in both light and dark modes, 
-						affecting both active and inactive button states. As these are the only interactive controls on this pane, 
-						the failure creates a direct barrier to completing the Export for Mobile task independently. 
-						Interactive component boundaries also fail the 3:1 minimum under 1.4.11 in both modes, 
-						consistent with the interface-wide pattern. Focus visibility was strong across both modes,
-						tab order was logical, and all reachable elements were keyboard accessible. Several test criteria — 
-						including dropdown operability, radio button group navigation, and link activation — were not 
-						applicable to this pane, as these element types are not present in the Export for Mobile interface.
+					<p>The Export for Mobile panel introduced a panel-specific finding alongside the systemic failures 
+						found throughout the Settings interface. The primary controls for this workflow — the 'Select All' 
+						and 'Export' buttons — fail the 4.5:1 minimum text contrast ratio under WCAG 2.2 AA 1.4.3 in both 
+						light and dark modes, affecting both active and inactive button states. As these are the only interactive 
+						controls on this panel, the failure creates a direct barrier to completing the Export for Mobile task 
+						independently. Interactive component boundaries also fail the 3:1 minimum under 1.4.11 in both modes, 
+						consistent with the interface-wide pattern. Focus visibility was strong across both modes, tab order
+						was logical, and all reachable elements were keyboard accessible. Several test criteria — including 
+						dropdown operability, radio button group navigation, and link activation — were not applicable to this panel, 
+						as these element types are not present in the Export for Mobile interface. Screen reader testing was a strong 
+						point for this panel: all form controls, buttons, links, and headings announced their name, role, and state 
+						correctly, heading levels were logically nested with no skipped levels, reading order matched the visual 
+						layout, and state changes were announced immediately without requiring re-navigation — no screen reader 
+						failures were identified.
 					</p>
 				</div>
 			</div>
