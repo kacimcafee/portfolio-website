@@ -787,6 +787,27 @@ footer {
   margin: 0;              
 }
 
+.projects-title a {
+  font-family: 'IBM Plex Sans', 'Source Sans 3', sans-serif;
+  font-weight: 600;        
+  line-height: 2;
+  letter-spacing: 0.8px;
+  color: #ff5500;
+  margin: 0;         
+  display: inline-block; 
+  transition: transform 0.2s ease, color 0.2s ease;    
+}
+
+
+.projects-title a:hover,
+.projects-title a:focus,
+.projects-title a:hover {
+  color: #FFB700;
+  transform: translateY(-2px);
+  
+}
+
+
 
 
 
